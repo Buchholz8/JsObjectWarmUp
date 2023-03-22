@@ -37,3 +37,13 @@ while (counter < my_city[`communities`].length){
     ]
     counter++;
 }
+let username=[`user1`,`User2`,`User3`,`user4`,`user5winner`];
+let i=0;
+while (i < username.length){
+    let lower_username = username[i].toLocaleLowerCase();
+    let usernames_contains_winner = lower_username.includes(`winner`)
+    if(usernames_contains_winner === true){
+    console.log(`we have a winner: ${username[i]}`)
+    }
+i++
+}
